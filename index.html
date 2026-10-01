@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nice Price — Food & Snacks</title>
+<meta name="description" content="Nice Price — delicious food at a nice price. Order fresh food for pickup or delivery.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#"><span>Nice</span> Price</a><nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a></nav><button class="cart" onclick="openCart()">🛒 <b id="count">0</b></button></div></header>
+
+<section class="hero"><div class="wrap hero-grid"><div><div class="badge">🔥 FRESH • TASTY • AFFORDABLE</div><h1>Good food.<br><em>Nice price.</em></h1><p>Delicious favourites made fresh, without making your wallet unhappy.</p><a class="btn" href="#menu">Explore Menu ↓</a></div><div class="hero-food"><div class="plate">🍔</div><div class="float">⭐ Customer favourite</div></div></div></section>
+
+<section id="menu" class="wrap section"><div class="heading"><div><small>OUR MENU</small><h2>What are you craving?</h2></div><input id="search" oninput="render()" placeholder="🔎 Search food"></div><div id="cats" class="cats"></div><div id="products" class="grid"></div></section>
+
+<section id="about" class="about"><div class="wrap about-grid"><div><small>ABOUT NICE PRICE</small><h2>Simple food, honest prices.</h2><p>We believe tasty food should be enjoyable and affordable. Nice Price is designed to make ordering your favourites simple and quick.</p></div><div class="features"><div>⚡<strong>Quick</strong><span>Easy ordering</span></div><div>💰<strong>Affordable</strong><span>Nice prices</span></div><div>❤️<strong>Fresh</strong><span>Made with care</span></div></div></div></section>
+
+<section id="contact" class="wrap contact"><div><small>CONTACT</small><h2>Ready to order?</h2><p>Demo details are shown below. Replace them with your real business details.</p></div><div class="contact-card"><p>📍 Your City, India</p><p>📱 +91 99999 99999</p><p>🕐 11:00 AM – 10:00 PM</p><a class="btn" href="https://wa.me/919999999999" target="_blank">WhatsApp Us</a></div></section>
+
+<footer><div class="wrap foot"><div><a class="brand" href="#"><span>Nice</span> Price</a><p>Delicious food at a nice price.</p></div><div>© 2026 Nice Price</div></div></footer>
+
+<div id="shade" class="shade" onclick="closeCart()"></div>
+<aside id="drawer"><div class="drawer-head"><h2>Your Cart</h2><button onclick="closeCart()">✕</button></div><div id="items" class="items"></div><div class="checkout"><div class="total"><span>Total</span><b>₹<span id="total">0</span></b></div><button class="btn wide" onclick="whatsapp()">Order on WhatsApp</button><small>We'll send your order to WhatsApp. You can then share your name and address.</small></div></aside>
+<script src="script.js"></script>
+</body></html>
